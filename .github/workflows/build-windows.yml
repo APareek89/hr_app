@@ -21,28 +21,28 @@ jobs:
     - name: Install dependencies
       run: |
         python -m venv venv
-        venv\Scripts\python.exe -m pip install --upgrade pip
-        venv\Scripts\python.exe -m pip install -r requirements.txt
+        venv\Scripts\python.exe
+        python -m pip install --upgrade pip
+        pip install flask pyyaml numpy scipy scikit-learn openai pdfplumber python-docx
 
     - name: Build with PyInstaller
       run: |
-        venv\Scripts\python.exe -m pip show pyinstaller || venv\Scripts\python.exe -m pip install pyinstaller
+        venv\Scripts\python.exe -m pip install --upgrade pip
+        venv\Scripts\python.exe -m pip install flask pyyaml numpy scipy scikit-learn openai pdfplumber python-docx
         venv\Scripts\python.exe -m PyInstaller --noconfirm --onefile ^
-          --add-data=configs;configs ^
-          --add-data=resumes;resumes ^
-          --hidden-import=scipy._lib._ufuncs_cxx ^
-          --hidden-import=scipy._lib.array_api_compat.numpy.fft ^
-          --hidden-import=scipy._lib.array_api_compat.numpy ^
-          --hidden-import=numpy.core._exceptions ^
-          --hidden-import=numpy.core._methods ^
-          --hidden-import=numpy.fft._pocketfft ^
-          --hidden-import=numpy.linalg._umath_linalg ^
-          --hidden-import=scipy.special._special_ufuncs ^
-          --hidden-import=yaml ^
-          --hidden-import=flask ^
-          --name=hr_agent_tbz_aws ^
-          hr_agent_tbz_aws.py
-
+        --add-data=configs;configs ^
+        --add-data=resumes;resumes ^
+        --hidden-import=numpy.core._exceptions ^
+        --hidden-import=numpy.core._methods ^
+        --hidden-import=numpy.fft._pocketfft ^
+        --hidden-import=numpy.linalg._umath_linalg ^
+        --hidden-import=scipy._lib._ufuncs_cxx ^
+        --hidden-import=scipy.special._special_ufuncs ^
+        --hidden-import=yaml ^
+        --hidden-import=flask ^
+        --name=hr_agent_tbz_aws ^
+        hr_agent_tbz_aws.py
+        
     - name: Upload artifact
       uses: actions/upload-artifact@v4
       with:
