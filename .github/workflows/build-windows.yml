@@ -1,0 +1,43 @@
+name: Build Windows exe
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build-windows:
+    runs-on: windows-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+
+    - name: Install dependencies
+      run: |
+        python -m venv venv
+        # Activate venv
+        venv\Scripts\activate
+        python -m pip install --upgrade pip
+        pip install pyinstaller
+        pip install -r requirements.txt
+
+    - name: Build single-file exe with PyInstaller
+      run: |
+        venv\Scripts\activate
+        pyinstaller --noconfirm --onefile ^
+          --add-data "configs;configs" ^
+          --add-data "resumes;resumes" ^
+          --name hr_agent_tbz_aws ^
+          run_app.py
+      shell: bash
+
+    - name: Upload artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: hr_app-windows-exe
+        path: dist/hr_agent_tbz_aws.exe
