@@ -1,0 +1,14 @@
+models:
+  embedding_model: "text-embedding-3-small"
+  llm_model: "gpt-4o-mini"
+prompts:
+  cleaning: |
+    Remove extra whitespaces, newlines, and non-alphanumeric noise. Keep core content like skills, experience, education.
+  refinement: |
+    You are a recruitment agent. Given a job description: "{job_desc}"
+    And a candidate resume summary: "{resume_summary}"
+    Mention in bullet points with each in separate line and headers: Candidate Name, Years of Experience, Contact Number, Contact Email, Current Company, Current Designation, and a short paragraph of 2-3 lines explaining why this candidate is a good fit, highlighting key matches in skills, experience, and qualifications.
+  job_desc_refined: | 
+    Extract key skill words from job responsibilities, activities, tasks to be performed and key activities provided in job description. Output only the bullets or short comma-separated keywords (no extra text).
+  resume_exp_extract: |
+    Extract key skill and experience related key words only from job responsibilities, activities, tasks performed, job experience and key activities from this resume text. Output only the bullets or short comma-separated keywords (no extra text).

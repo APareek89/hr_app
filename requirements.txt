@@ -1,0 +1,75 @@
+altgraph==0.17.4
+annotated-types==0.7.0
+anyio==3.7.1
+appnope @ file:///private/var/folders/c_/qfmhj66j0tn016nkx_th4hxm0000gp/T/abs_7c1coup_4g/croot/appnope_1750774970724/work
+asttokens @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_15z9et5x6m/croot/asttokens_1743630451525/work
+blinker==1.9.0
+certifi==2025.8.3
+cffi==2.0.0
+charset-normalizer==3.4.3
+click==8.3.0
+comm @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_aef2nlxc2o/croot/comm_1709322866518/work
+cryptography==46.0.1
+debugpy @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_a5sm9dmihj/croot/debugpy_1736267550163/work
+decorator @ file:///opt/conda/conda-bld/decorator_1643638310831/work
+distro==1.9.0
+executing @ file:///opt/conda/conda-bld/executing_1646925071911/work
+Flask==2.3.2
+h11==0.16.0
+httpcore==1.0.9
+httpx==0.28.1
+idna==3.10
+ipykernel @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_6757k8pgf8/croot/ipykernel_1737662465787/work
+ipython @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_be0wj_gdwv/croot/ipython_1744912974216/work
+ipython_pygments_lexers @ file:///private/var/folders/c_/qfmhj66j0tn016nkx_th4hxm0000gp/T/abs_c2ksl8pvkj/croot/ipython_pygments_lexers_1744753254606/work
+itsdangerous==2.2.0
+jedi @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_b78vrox9dk/croot/jedi_1733987406492/work
+Jinja2==3.1.6
+jiter==0.11.0
+joblib==1.5.2
+jupyter_client @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_e4fuoqieve/croot/jupyter_client_1737570976188/work
+jupyter_core @ file:///private/var/folders/c_/qfmhj66j0tn016nkx_th4hxm0000gp/T/abs_0a8h9_6hwe/croot/jupyter_core_1751991398340/work
+lxml==6.0.2
+macholib==1.16.3
+MarkupSafe==3.0.2
+matplotlib-inline @ file:///Users/builder/cbouss/perseverance-python-buildout/croot/matplotlib-inline_1699248719910/work
+nest-asyncio @ file:///private/var/folders/c_/qfmhj66j0tn016nkx_th4hxm0000gp/T/abs_c44_atq5c1/croot/nest-asyncio_1708532677863/work
+numpy==1.26.4
+openai==1.109.1
+packaging @ file:///private/var/folders/c_/qfmhj66j0tn016nkx_th4hxm0000gp/T/abs_95hd3yozva/croot/packaging_1753775365688/work
+parso @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_ffagjb_lok/croot/parso_1733963312676/work
+pdfminer.six==20231228
+pdfplumber==0.11.0
+pexpect @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_fciqh6l88d/croot/pexpect_1750072604083/work
+pillow==11.3.0
+platformdirs @ file:///private/var/folders/c_/qfmhj66j0tn016nkx_th4hxm0000gp/T/abs_f8agv_yepz/croot/platformdirs_1744273051859/work
+prompt-toolkit @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_4d8kk9w3ed/croot/prompt-toolkit_1704404354789/work
+psutil @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_ed123tcwwq/croot/psutil_1736369384437/work
+ptyprocess @ file:///tmp/build/80754af9/ptyprocess_1609355006118/work/dist/ptyprocess-0.7.0-py2.py3-none-any.whl
+pure-eval @ file:///opt/conda/conda-bld/pure_eval_1646925070566/work
+pycparser==2.23
+pydantic==2.11.9
+pydantic_core==2.33.2
+Pygments @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_d3k0kb020b/croot/pygments_1744664134805/work
+pyinstaller==6.0.0
+pyinstaller-hooks-contrib==2025.9
+pypdfium2==4.30.0
+python-dateutil @ file:///private/var/folders/c_/qfmhj66j0tn016nkx_th4hxm0000gp/T/abs_efk5_uakg8/croot/python-dateutil_1716495742183/work
+python-docx==1.1.0
+PyYAML==6.0.1
+pyzmq @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_728n2oj6m9/croot/pyzmq_1734709561835/work
+scikit-learn==1.5.2
+scipy==1.14.1
+setuptools==78.1.1
+six @ file:///private/var/folders/c_/qfmhj66j0tn016nkx_th4hxm0000gp/T/abs_2e3n1z57yz/croot/six_1744271514562/work
+sniffio==1.3.1
+stack-data @ file:///opt/conda/conda-bld/stack_data_1646927590127/work
+threadpoolctl==3.6.0
+tornado @ file:///private/var/folders/c_/qfmhj66j0tn016nkx_th4hxm0000gp/T/abs_53i9d3wys5/croot/tornado_1748956943199/work
+tqdm==4.67.1
+traitlets @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_f49losghmg/croot/traitlets_1718227069025/work
+typing-inspection==0.4.1
+typing_extensions==4.15.0
+wcwidth @ file:///private/var/folders/c_/qfmhj66j0tn016nkx_th4hxm0000gp/T/abs_1fo7yjwhjy/croot/wcwidth_1750352905069/work
+Werkzeug==3.1.3
+wheel==0.45.1
