@@ -30,9 +30,11 @@ jobs:
       run: |
         venv\Scripts\activate
         pyinstaller --noconfirm --onefile ^
-          --add-data "configs;configs" ^
-          --add-data "resumes;resumes" ^
-          --name hr_agent_tbz_aws ^
+          --add-data="configs;configs" ^
+          --add-data="resumes;resumes" ^
+          --hidden-import=scipy._lib.array_api_compat.numpy.fft ^
+          --hidden-import=scipy._lib.array_api_compat.numpy ^
+          --name=hr_agent_tbz_aws ^
           run_app.py
       shell: bash
 
