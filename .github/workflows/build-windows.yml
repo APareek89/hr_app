@@ -35,7 +35,7 @@ jobs:
           --hidden-import=scipy._lib.array_api_compat.numpy.fft ^
           --hidden-import=scipy._lib.array_api_compat.numpy ^
           --name=hr_agent_tbz_aws ^
-          run_app.py
+          hr_agent_tbz_aws.py
       shell: bash
 
     - name: Upload artifact
