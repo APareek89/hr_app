@@ -24,7 +24,7 @@ jobs:
         venv\Scripts\activate
         python -m pip install --upgrade pip
         pip install pyinstaller
-        pip install -r requirements.txt
+        pip install flask pyyaml numpy scipy scikit-learn openai pdfplumber
 
     - name: Build single-file exe with PyInstaller
       run: |
