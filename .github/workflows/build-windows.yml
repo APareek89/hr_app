@@ -30,7 +30,7 @@ jobs:
     - name: Build executable with PyInstaller
       run: |
         venv\Scripts\python.exe -m pip show pyinstaller || venv\Scripts\python.exe -m pip install pyinstaller
-        venv\Scripts\python.exe -m PyInstaller --noconfirm --onefile ` 
+        venv\Scripts\python.exe -m PyInstaller --noconfirm --onefile `
           --add-data=configs;configs `
           --add-data=resumes;resumes `
           --hidden-import=numpy.core._exceptions `
